@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4cfb894810.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Madam Deborah Wengam</title>
+</head>
+<body>
+    <!-- Landing page -->
+     <div class="slide landing-page">
+        <a href="assets/Digital Marketing Brief.pdf" class="download-button" target="_blank">
+            <i class="fa-solid fa-download"></i>
+            Tap to download the brochure
+        </a>
+        <a href="#stream" class="stream-button">
+            <i class="fa-solid fa-play"></i>
+            Tap to Stream the Funeral
+        </a>
+     </div>
+
+     <!-- Streaming page -->
+      <div class="slide stream-page" id="stream">
+        <div class="video-container">
+            <iframe width="800" height="550" src="https://www.youtube.com/embed/FImzQpcvOPM?si=ZPqCj4qgkcNNsCkn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+        </div>
+        <!-- Tribute Section -->
+        <div class="tribute-column">
+            <div class="tribute-carousel">
+                <!-- Tributes will be dynamically added here -->
+            </div>
+            <form class="input-field" onsubmit="submitTribute(event)">
+                <input type="text" placeholder="Enter your name here..." required>
+                <h2>Tribute</h2>
+                <textarea id="tributeText" placeholder="Write your tribute here..." required></textarea>
+                <button type="submit">Send Tribute</button>
+            </form>
+        </div>          
+      </div>
+
+      <!-- Gallery -->
+      <div class="slide gallery-page">
+        <div class="gallery-container">
+            <img src="assets/images/gallery_image_01.jpg" alt="Image 1" class="gallery-image">
+            <img src="assets/images/gallery_image_02.jpg" alt="Image 1" class="gallery-image">
+            <img src="assets/images/gallery_image_03.jpg" alt="Image 1" class="gallery-image">
+            <img src="assets/images/gallery_image_04.jpg" alt="Image 1" class="gallery-image">
+            <img src="assets/images/gallery_image_05.jpg" alt="Image 1" class="gallery-image">
+            <img src="assets/images/gallery_image_06.jpg" alt="Image 1" class="gallery-image">
+            <img src="assets/images/gallery_image_07.jpg" alt="Image 1" class="gallery-image">
+            <img src="assets/images/gallery_image_08.jpg" alt="Image 1" class="gallery-image">
+            <img src="assets/images/gallery_image_09.jpg" alt="Image 1" class="gallery-image">
+            <img src="assets/images/gallery_image_10.jpg" alt="Image 1" class="gallery-image">
+            <img src="assets/images/gallery_image_11.jpg" alt="Image 1" class="gallery-image">
+        </div>  
+      </div>
+    
+    <div id="lightbox">
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="Enlarged Image">
+            <button id="prev" class="nav-button">❮</button>
+            <button id="next" class="nav-button">❯</button>
+        </div>
+    </div>
+    
+    
+       <script src="script.js"></script>
+</body>
+</html>
